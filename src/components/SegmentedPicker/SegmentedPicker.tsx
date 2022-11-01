@@ -627,6 +627,8 @@ export default class SegmentedPicker extends Component<Props, State> {
       defaultSelections,
       size,
       confirmText,
+      cancelText,
+      cancelTextColor,
       confirmTextColor,
       pickerItemTextColor,
       toolbarBackgroundColor,
@@ -672,11 +674,16 @@ export default class SegmentedPicker extends Component<Props, State> {
             style={[styles.pickerContainer, { height: `${size * 100}%`, backgroundColor }]}
           >
             <Toolbar
+              cancelText={cancelText}
               confirmText={confirmText}
+              cancelTextColor={cancelTextColor}
               confirmTextColor={confirmTextColor}
               toolbarBackground={toolbarBackgroundColor}
               toolbarBorderColor={toolbarBorderColor}
               onConfirm={this.onConfirm}
+              onCancel={() => {
+                this.hide();
+              }}
             />
 
             <View style={styles.selectableArea}>
