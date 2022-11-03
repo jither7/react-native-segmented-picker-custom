@@ -1,8 +1,8 @@
 {
-  "name": "react-native-segmented-picker",
+  "name": "@dean/react-native-segmented-picker-custom",
   "version": "2.0.3",
   "description": "Selection picker wheel with multi-column support and optional native dependencies.",
-  "author": "Adam McArthur",
+  "author": "Dean",
   "license": "MIT",
   "private": false,
   "main": "dist/bundle.js",
@@ -15,13 +15,17 @@
     "e2e-android": "cd examples && yarn install && yarn e2e-android-debug-init && yarn e2e-android-debug --take-screenshots all --record-logs all",
     "e2e-ios": "cd examples && yarn install && cd ios && pod install && cd ../ && yarn e2e-ios-debug-init && yarn e2e-ios-debug --take-screenshots all --record-logs all"
   },
+  "publishConfig": {
+    "access": "public",
+    "directory": "dist"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/adammcarth/react-native-segmented-picker.git"
+    "url": "git+https://github.com/jither7/react-native-segmented-picker-custom.git"
   },
-  "homepage": "https://github.com/adammcarth/react-native-segmented-picker#readme",
+  "homepage": "https://github.com/jither7/react-native-segmented-picker-custom#readme",
   "bugs": {
-    "url": "https://github.com/adammcarth/react-native-segmented-picker/issues"
+    "url": "https://github.com/jither7/react-native-segmented-picker-custom.git/issues"
   },
   "keywords": [
     "react-native",
@@ -113,5 +117,9 @@
         }
       }
     }
+  },
+  "directories": {
+    "doc": "docs",
+    "example": "examples"
   }
 }

@@ -51,10 +51,12 @@ export interface Props {
   visible: boolean;
   defaultSelections: Selections;
   size: number;
+  cancelText: string;
   confirmText: string;
   nativeTestID: string;
   // Styling
   confirmTextColor: string;
+  cancelTextColor: string;
   pickerItemTextColor: string;
   toolbarBackgroundColor: string;
   toolbarBorderColor: string;
